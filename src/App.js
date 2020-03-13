@@ -16,7 +16,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <p>I am not a React Person</p>
+        <p>I am a React Person</p>
         <Person name={iamwebDeveloper[1]}></Person>
         <Product product={products[0]}></Product>
         <Product product={products[1]} ></Product>
@@ -106,7 +106,7 @@ function Users (){
     .then(res => res.json())
     .then(data => setUsers(data));
   }, [])
-  
+
   return(
     <div>
       <h3>Dynamic Users {users.length}</h3>
